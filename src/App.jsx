@@ -4,6 +4,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import LeftMenu from './components/menus/LeftMenu';
 import WebFont from 'webfontloader';
 import Home from './pages/Home';
+import Settings from './pages/Settings';
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
         <div className='content'>
           <Routes>
             <Route path='/' element={<Home/>}/>
+            <Route path='/settings' element={<Settings/>}/>
           </Routes>
         </div>
       </BrowserRouter>

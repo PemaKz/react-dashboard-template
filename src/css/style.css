@@ -26,6 +26,12 @@ h2{
   font-weight: bold !important;
   font-size: 5rem !important;
 }
+button{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+}
 
 .content{
   margin-top: var(--topmenu-height);
@@ -45,10 +51,31 @@ h2{
   background-color: var(--primary-color) !important;
   border: var(--primary-color) !important;
 }
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(25,145,235,0.7) !important;
+}
+
+.dropdown-menu{
+  background-color: var(--content-color) !important;
+}
+.dropdown-item{
+  color: var(--primary-text) !important;
+}
+.dropdown-item:hover{
+  color: var(--primary-text) !important;
+  background: rgba(25,145,235,0.3) !important;
+}
+
 /*Container FWH*/
 .fullcontainer{
   width: calc(100vh - var(--leftmenu-width));
   height: calc(100vh - var(--topmenu-height));
+  color: var(--primary-text) !important;
 }
 
 /*Left Menu*/
@@ -62,18 +89,12 @@ h2{
   height: 100% !important;
 }
 .handlemenubutton{
-  padding: 0;
-  margin: 0;
-  border: 0;
   background-color: var(--primary-color);
   color: var(--primary-text);
   height: var(--topmenu-height);
 }
 
 .leftmbutton{
-  padding: 0;
-  margin: 0;
-  border: 0;
   border-radius: 50%;
   width:calc(var(--leftmenu-staticwidth) * 0.8);
   height:calc(var(--leftmenu-staticwidth) * 0.8);
@@ -82,17 +103,7 @@ h2{
   background-color: #2d343d;
   box-shadow: 0px 0px 5px var(--bg-color);
   color: var(--primary-text);
-}
-
-.leftmbutton:hover{
-  background-color: var(--primary-color);
-}
-
-.leftbutton{
-  padding: 0;
-  margin: 0;
-  border: 0;
-  background: none;
+  cursor: pointer;
 }
 
 .leftbutton:hover{
@@ -116,13 +127,11 @@ h2{
 }
 
 .userbutton{
-  padding: 0;
-  margin: 0;
   border: 2px solid rgba(25,20,35,0);
-  background: none;
+  background: none !important;
 }
 .userbutton:hover{
-  background: rgba(25,145,235,0.3);
+  background: rgba(25,145,235,0.3) !important;
 }
 
 .online-text{

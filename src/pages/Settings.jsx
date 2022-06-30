@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Home() {
+function Settings() {
   return (<div className='container fullcontainer'>
-    Home
+    Settings
   </div>);
 }
 
-export default Home;
+export default Settings;

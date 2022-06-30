@@ -2,7 +2,7 @@ import React from 'react';
 
 const LeftMenuButton = ({icon, text}) => {
   console.log(icon, text);
-  return (<button className='leftbutton d-flex'>
+  return (<div className='leftbutton d-flex'>
     <div className='btnicon'>
       <div className={'leftmbutton my-2 d-flex align-items-center \
       justify-content-center'}>
@@ -15,7 +15,7 @@ const LeftMenuButton = ({icon, text}) => {
         {text}
       </p>
     </div>
-  </button>);
+  </div>);
 };
 
 export default LeftMenuButton;
